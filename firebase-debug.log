@@ -1,0 +1,68 @@
+[debug] [2023-12-18T18:44:36.046Z] ----------------------------------------------------------------------
+[debug] [2023-12-18T18:44:36.049Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-12-18T18:44:36.049Z] CLI Version:   8.20.0
+[debug] [2023-12-18T18:44:36.049Z] Platform:      win32
+[debug] [2023-12-18T18:44:36.049Z] Node Version:  v12.22.12
+[debug] [2023-12-18T18:44:36.050Z] Time:          Tue Dec 19 2023 00:14:36 GMT+0530 (India Standard Time)
+[debug] [2023-12-18T18:44:36.050Z] ----------------------------------------------------------------------
+[debug] [2023-12-18T18:44:36.050Z] 
+[debug] [2023-12-18T18:44:36.104Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-18T18:44:36.106Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\amazon_clone\amazon\react-challenge-amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using challenge-92d82. 
+[debug] [2023-12-18T18:45:28.520Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/challenge-92d82  
+ 
+[debug] [2023-12-18T18:45:29.489Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 18 Dec 2023 18:45:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-12-18T18:46:11.372Z] ----------------------------------------------------------------------
+[debug] [2023-12-18T18:46:11.376Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-12-18T18:46:11.377Z] CLI Version:   8.20.0
+[debug] [2023-12-18T18:46:11.377Z] Platform:      win32
+[debug] [2023-12-18T18:46:11.377Z] Node Version:  v12.22.12
+[debug] [2023-12-18T18:46:11.379Z] Time:          Tue Dec 19 2023 00:16:11 GMT+0530 (India Standard Time)
+[debug] [2023-12-18T18:46:11.379Z] ----------------------------------------------------------------------
+[debug] [2023-12-18T18:46:11.379Z] 
+[debug] [2023-12-18T18:46:11.385Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-18T18:46:11.386Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\amazon_clone\amazon\react-challenge-amazon-clone
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
