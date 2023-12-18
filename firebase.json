@@ -1,10 +1,18 @@
 {
   "hosting": {
-    "public": "build",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          "Access-Control-Allow-Origin: *"
+        ]
+      }
     ]
   },
   "functions": {
@@ -13,4 +21,5 @@
     ],
     "source": "functions"
   }
+  
 }

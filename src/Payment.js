@@ -20,7 +20,7 @@ function Payment() {
     const [processing, setProcessing] = useState("");
     const [error, setError] = useState(null);
     const [disabled, setDisabled] = useState(true);
-    const [clientSecret, setClientSecret] = useState(true);
+    const [clientSecret, setClientSecret] = useState("");
 
     useEffect(() => {
         // generate the special stripe secret which allows us to charge a customer
@@ -50,17 +50,16 @@ function Payment() {
             }
         }).then(({ paymentIntent }) => {
             // paymentIntent = payment confirmation
-
             db
-              .collection('users')
-              .doc(user?.uid)
-              .collection('orders')
-              .doc(paymentIntent.id)
-              .set({
-                  basket: basket,
-                  amount: paymentIntent.amount,
-                  created: paymentIntent.created
-              })
+            .collection('users')
+            .doc(user?.uid)
+            .collection('orders')
+            .doc(paymentIntent.id)
+            .set({
+                basket: basket,
+                amount: paymentIntent.amount,
+                created: paymentIntent.created
+            })
 
             setSucceeded(true);
             setError(null)
@@ -99,8 +98,8 @@ function Payment() {
                     </div>
                     <div className='payment__address'>
                         <p>{user?.email}</p>
-                        <p>123 React Lane</p>
-                        <p>Los Angeles, CA</p>
+                        <p>Loknathnagar</p>
+                        <p>Chakradapur, Jharkhand</p>
                     </div>
                 </div>
 
@@ -127,10 +126,11 @@ function Payment() {
                 <div className='payment__section'>
                     <div className="payment__title">
                         <h3>Payment Method</h3>
+                        
                     </div>
                     <div className="payment__details">
                             {/* Stripe magic will go */}
-
+                            <h4>Card details</h4>
                             <form onSubmit={handleSubmit}>
                                 <CardElement onChange={handleChange}/>
 
@@ -143,7 +143,7 @@ function Payment() {
                                         value={getBasketTotal(basket)}
                                         displayType={"text"}
                                         thousandSeparator={true}
-                                        prefix={"$"}
+                                        prefix={"Rs."}
                                     />
                                     <button disabled={processing || disabled || succeeded}>
                                         <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
